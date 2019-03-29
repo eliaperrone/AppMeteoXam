@@ -1,2 +1,2 @@
 # AppMeteoXam
-Native application for Meteo Utilities
+Cross-Platform application for Meteo Utilities with Xamarine
