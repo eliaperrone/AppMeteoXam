@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UIKit;
 using Xamarin.Forms;
 
@@ -16,17 +13,7 @@ namespace MeteoApp
         public MeteoListPage()
         {
             InitializeComponent();
-<<<<<<< HEAD
             BindingContext = MeteoListViewModel;
-=======
-
-            BindingContext = new MeteoListViewModel();
->>>>>>> ddb0fa2323fffd94c4d70ff9480ddedb0ec2c8db
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
         }
 
 
@@ -37,12 +24,7 @@ namespace MeteoApp
             return  null;
         }
 
-        static async Task<ICollection<Entry>> HandleFileAsync()
-        {
- 
 
-            return null;
-        }
 
         void OnItemAdded(object sender, EventArgs e)
         {
@@ -62,8 +44,7 @@ namespace MeteoApp
                 }
 
                 //faccio la richiesta ad openCage
-                string c = "https://api.opencagedata.com/geocode/v1/json?q=Manno&key=ea341c0e70344a13bc96f6c28727735a";
-                var appoggio = new Entry
+               var appoggio = new Entry
                 {
                     ID = 2,
                     Name = input

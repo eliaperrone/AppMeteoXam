@@ -655,20 +655,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/galliva/.nuget/packages/": {}
+    "/Users/marco/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/2_Mobile/Lezioni/7/Progetti/MeteoApp_with_MVVM/MeteoApp.iOS/MeteoApp.iOS.csproj",
+      "projectUniqueName": "/Users/marco/Desktop/mobile/ProgettoXam/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
       "projectName": "MeteoApp.iOS",
-      "projectPath": "/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/2_Mobile/Lezioni/7/Progetti/MeteoApp_with_MVVM/MeteoApp.iOS/MeteoApp.iOS.csproj",
-      "packagesPath": "/Users/galliva/.nuget/packages/",
-      "outputPath": "/Users/galliva/Dropbox/01-galliva/Work/SUPSI/0_Corsi/2_Mobile/Lezioni/7/Progetti/MeteoApp_with_MVVM/MeteoApp.iOS/obj/",
+      "projectPath": "/Users/marco/Desktop/mobile/ProgettoXam/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
+      "packagesPath": "/Users/marco/.nuget/packages/",
+      "outputPath": "/Users/marco/Desktop/mobile/ProgettoXam/AppMeteoXam/MeteoApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/galliva/.config/NuGet/NuGet.Config"
+        "/Users/marco/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
