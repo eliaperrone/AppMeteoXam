@@ -5,9 +5,9 @@ namespace MeteoApp
 {
     public class MeteoListViewModel : BaseViewModel
     {
-        ObservableCollection<Entry> _entries;
+         ObservableCollection<Entry> _entries;
 
-        public ObservableCollection<Entry> Entries
+         public   ObservableCollection<Entry> Entries
         {
             get { return _entries; }
             set
@@ -27,12 +27,26 @@ namespace MeteoApp
                 {
                     ID = i,
                     Name = "Entry " + i,
-                    Lat = 200
-
+                    MaxTemperature = GetRandomNumber(230,550),
+                    ActualTemperature = GetRandomNumber(0,100),
+                    MinTemperature = GetRandomNumber(-10,40)
                 };
 
                 Entries.Add(e);
             }
         }
+        private static readonly Random getrandom = new Random();
+
+        public static int GetRandomNumber(int min, int max)
+        {
+            lock (getrandom) // synchronize
+            {
+                return getrandom.Next(min, max);
+            }
+        }
+
+
+
     }
+
 }

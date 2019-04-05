@@ -13,5 +13,7 @@ namespace MeteoApp
         public double MinTemperature { get; set; }
         public string icon { get; set; }
 
+        
+
     }
 }
