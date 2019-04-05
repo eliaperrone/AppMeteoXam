@@ -26,7 +26,9 @@ namespace MeteoApp
                 var e = new Entry
                 {
                     ID = i,
-                    Name = "Entry " + i
+                    Name = "Entry " + i,
+                    Lat = 200
+
                 };
 
                 Entries.Add(e);
