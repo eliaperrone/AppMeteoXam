@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MeteoApp.MeteoItemPage">
     <ContentPage.Content>
         <RelativeLayout x:Name="container">
+<<<<<<< HEAD
             <Label Text="{Binding Name}" RelativeLayout.XConstraint="{ConstraintExpression 
+=======
+            <Label Text="{Binding Entry.Name}" RelativeLayout.XConstraint="{ConstraintExpression 
+>>>>>>> ddb0fa2323fffd94c4d70ff9480ddedb0ec2c8db
                         Type=RelativeToParent,
                         Property=Width, 
                         Factor=0.5,

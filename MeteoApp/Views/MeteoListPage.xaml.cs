@@ -16,7 +16,12 @@ namespace MeteoApp
         public MeteoListPage()
         {
             InitializeComponent();
+<<<<<<< HEAD
             BindingContext = MeteoListViewModel;
+=======
+
+            BindingContext = new MeteoListViewModel();
+>>>>>>> ddb0fa2323fffd94c4d70ff9480ddedb0ec2c8db
         }
 
         protected override void OnAppearing()
@@ -76,7 +81,7 @@ namespace MeteoApp
             {
                 Navigation.PushAsync(new MeteoItemPage()
                 {
-                    BindingContext = e.SelectedItem as Entry
+                    BindingContext = new MeteoItemViewModel(e.SelectedItem as Entry)
                 });
             }
         }

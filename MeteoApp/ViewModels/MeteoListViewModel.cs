@@ -26,10 +26,14 @@ namespace MeteoApp
                 var e = new Entry
                 {
                     ID = i,
+<<<<<<< HEAD
                     Name = "Entry " + i,
                     MaxTemperature = GetRandomNumber(230,550),
                     ActualTemperature = GetRandomNumber(0,100),
                     MinTemperature = GetRandomNumber(-10,40)
+=======
+                    Name = "Entry " + i
+>>>>>>> ddb0fa2323fffd94c4d70ff9480ddedb0ec2c8db
                 };
 
                 Entries.Add(e);
@@ -48,5 +52,9 @@ namespace MeteoApp
 
 
     }
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> ddb0fa2323fffd94c4d70ff9480ddedb0ec2c8db
