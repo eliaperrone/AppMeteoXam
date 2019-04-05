@@ -41,16 +41,18 @@ namespace MeteoApp
                 if (ev.ButtonIndex == 0)
                 {
                      input = alert.GetTextField(0).Text;
+
+                    var appoggio = new Entry
+                    {
+                        ID = 2,
+                        Name = input
+
+                    };
+                    MeteoListViewModel.Entries.Add(appoggio);
                 }
 
                 //faccio la richiesta ad openCage
-               var appoggio = new Entry
-                {
-                    ID = 2,
-                    Name = input
-
-                };
-                MeteoListViewModel.Entries.Add(appoggio);
+               
             };
             alert.Show();
 
