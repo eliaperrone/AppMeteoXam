@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using UIKit;
 using Xamarin.Forms;
 
@@ -48,9 +49,9 @@ namespace MeteoApp
                         Name = input
 
                     };
+                    OnActionSheetSimpleClicked(sender, e);
                     MeteoListViewModel.Entries.Add(appoggio);
                 }
-
                 //faccio la richiesta ad openCage
                
             };
@@ -67,6 +68,26 @@ namespace MeteoApp
                     BindingContext = new MeteoItemViewModel(e.SelectedItem as Entry)
                 });
             }
+        }
+
+        async void OnActionSheetSimpleClicked(object sender, EventArgs e)
+        {
+            string action = await DisplayActionSheet("ActionSheet: Send to?", "Cancel", null, "Email", "Twitter", "Facebook");
+            Debug.WriteLine("Action: " + action);
+        }
+
+        //funzione per visualizzare tutte le città del mondo che hanno quel nome 
+        ICollection<Support> GetRequestForNameToLatLon(string name) {
+            ICollection<Support> appoggio = new Collection<Support>();
+            appoggio.Add(new Support { ID = 0, Name="Manno, JP", Lat = 12, Lon = 13 });
+            appoggio.Add(new Support { ID = 1, Name ="Manno, IT", Lat = 2, Lon = 55 });
+            appoggio.Add(new Support { ID = 2, Name ="Manno, DE", Lat = 24, Lon = 34 });
+            appoggio.Add(new Support { ID = 3, Name ="Manno, USD", Lat = 124, Lon = 138 });
+            appoggio.Add(new Support { ID = 4, Name ="Manno, SW", Lat = 23, Lon = 3 });
+
+
+
+            return appoggio;
         }
     }
 }
