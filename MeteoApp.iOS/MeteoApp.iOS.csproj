@@ -153,6 +153,30 @@
       <Version>4.5.0.6</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable-v24\a01n.png" />
+    <BundleResource Include="Resources\drawable-v24\a02d.png" />
+    <BundleResource Include="Resources\drawable-v24\a02n.png" />
+    <BundleResource Include="Resources\drawable-v24\a03d.png" />
+    <BundleResource Include="Resources\drawable-v24\a03n.png" />
+    <BundleResource Include="Resources\drawable-v24\a04d.png" />
+    <BundleResource Include="Resources\drawable-v24\a04n.png" />
+    <BundleResource Include="Resources\drawable-v24\a09d.png" />
+    <BundleResource Include="Resources\drawable-v24\a09n.png" />
+    <BundleResource Include="Resources\drawable-v24\a10d.png" />
+    <BundleResource Include="Resources\drawable-v24\a10n.png" />
+    <BundleResource Include="Resources\drawable-v24\a11d.png" />
+    <BundleResource Include="Resources\drawable-v24\a11n.png" />
+    <BundleResource Include="Resources\drawable-v24\a13d.png" />
+    <BundleResource Include="Resources\drawable-v24\a13n.png" />
+    <BundleResource Include="Resources\drawable-v24\a50d.png" />
+    <BundleResource Include="Resources\drawable-v24\a50n.png" />
+    <BundleResource Include="Resources\drawable-v24\ic_launcher_foreground.xml" />
+    <BundleResource Include="Resources\drawable-v24\supsi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\drawable-v24\a01d.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\MeteoApp\MeteoApp.projitems" Label="Shared" />
 </Project>

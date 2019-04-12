@@ -9,7 +9,8 @@
                    FontSize="28"
                    Margin="50"/>
            
-            <Image Source=""/>
+            <!-- immagine non va -->
+            <Image Source="a01d.png"/>
             
             <Label Text="{Binding Entry.ActualTemperature, StringFormat='{0} C°'}"
                    HorizontalOptions="Center"

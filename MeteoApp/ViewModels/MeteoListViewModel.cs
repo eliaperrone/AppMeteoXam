@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
 
 using Plugin.Geolocator;
 
@@ -26,11 +25,6 @@ namespace MeteoApp
 
             //GetLocation(); NON VA PERCHÈ ???
 
-            Entries.Add(new Entry
-            {
-                ID = 1,
-                Name = "Prova"
-            });
         }
 
 

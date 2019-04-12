@@ -88,6 +88,26 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable-v24\a01d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a01n.png" />
+    <AndroidResource Include="Resources\drawable-v24\a02d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a02n.png" />
+    <AndroidResource Include="Resources\drawable-v24\a03d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a03n.png" />
+    <AndroidResource Include="Resources\drawable-v24\a04d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a04n.png" />
+    <AndroidResource Include="Resources\drawable-v24\a09d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a09n.png" />
+    <AndroidResource Include="Resources\drawable-v24\a10d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a10n.png" />
+    <AndroidResource Include="Resources\drawable-v24\a11d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a11n.png" />
+    <AndroidResource Include="Resources\drawable-v24\a13d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a13n.png" />
+    <AndroidResource Include="Resources\drawable-v24\a50d.png" />
+    <AndroidResource Include="Resources\drawable-v24\a50n.png" />
+    <AndroidResource Include="Resources\drawable-v24\ic_launcher_foreground.xml" />
+    <AndroidResource Include="Resources\drawable-v24\supsi.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
