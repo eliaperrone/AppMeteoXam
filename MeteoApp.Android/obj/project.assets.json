@@ -1159,11 +1159,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.Android/MeteoApp.Android.csproj",
+      "projectUniqueName": "/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.Android/MeteoApp.Android.csproj",
       "projectName": "MeteoApp.Android",
-      "projectPath": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.Android/MeteoApp.Android.csproj",
+      "projectPath": "/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.Android/MeteoApp.Android.csproj",
       "packagesPath": "/Users/patrick/.nuget/packages/",
-      "outputPath": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.Android/obj/",
+      "outputPath": "/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

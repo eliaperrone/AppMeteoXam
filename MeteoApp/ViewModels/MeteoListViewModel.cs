@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace MeteoApp
@@ -6,9 +7,10 @@ namespace MeteoApp
     public class MeteoListViewModel : BaseViewModel
     {
          ObservableCollection<Entry> _entries;
+         List<Entry> dbEntry;
 
          public   ObservableCollection<Entry> Entries
-        {
+         {
             get { return _entries; }
             set
             {
@@ -21,6 +23,13 @@ namespace MeteoApp
         {
 
             Entries = new ObservableCollection<Entry>();
+
+            dbEntry = App.Database.GetItemsAsync().Result;
+
+            foreach (var entry in dbEntry)
+            {
+                Entries.Add(entry);
+            }
 
             //for (var i = 0; i < 10; i++)
             //{

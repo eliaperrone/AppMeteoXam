@@ -48,6 +48,7 @@ namespace MeteoApp
                 };
 
                 MeteoListViewModel.Entries.Add(newEntry);
+                await App.Database.SaveItemAsync(newEntry);
             }
 
 

@@ -1106,11 +1106,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
+      "projectUniqueName": "/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
       "projectName": "MeteoApp.iOS",
-      "projectPath": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
+      "projectPath": "/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
       "packagesPath": "/Users/patrick/.nuget/packages/",
-      "outputPath": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/obj/",
+      "outputPath": "/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

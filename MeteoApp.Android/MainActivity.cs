@@ -21,6 +21,7 @@ namespace MeteoApp.Droid
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
+            //Per far funzionare Acr.UsrDialogs
             UserDialogs.Init(this);
 
             LoadApplication(new App());

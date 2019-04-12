@@ -31,6 +31,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\_BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MeteoItemViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\EmptyClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Database.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />

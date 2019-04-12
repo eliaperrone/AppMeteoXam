@@ -1,4 +1,4 @@
-/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/bin/iPhoneSimulator/Debug/MeteoApp.iOS.exe
+/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.iOS/bin/iPhoneSimulator/Debug/MeteoApp.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/mscorlib.dll
 /Users/patrick/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/netstandard.dll
@@ -24,3 +24,18 @@
 /Users/patrick/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll
 /Users/patrick/.nuget/packages/acr.userdialogs/7.0.4/lib/xamarinios10/Acr.UserDialogs.dll
 /Users/patrick/.nuget/packages/btprogresshud/1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll
+/Users/patrick/.nuget/packages/sqlite-net-pcl/1.5.231/lib/netstandard1.1/SQLite-net.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
+/Users/patrick/.nuget/packages/sqlitepclraw.core/1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.core.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Collections.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Runtime.Extensions.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Linq.Expressions.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Reflection.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Debug.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Threading.Tasks.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Linq.dll
+/Users/patrick/.nuget/packages/sqlitepclraw.bundle_green/1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll
+/Users/patrick/.nuget/packages/sqlitepclraw.provider.sqlite3.ios_unified/1.1.11/lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Threading.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.0/lib/mono/Xamarin.iOS/Facades/System.Globalization.dll

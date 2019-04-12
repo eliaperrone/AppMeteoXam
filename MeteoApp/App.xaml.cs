@@ -1,4 +1,5 @@
 ﻿using System;
+using MeteoApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,6 +8,19 @@ namespace MeteoApp
 {
     public partial class App : Application
     {
+        static Database database;
+
+        public static Database Database
+        {
+            get
+            {
+                if (database == null) // se l'istanza è nulla, la creo
+                    database = new Database(); 
+                    
+                    return database; // ritorno l'istanza
+            }
+        }
+
         public App()
         {
             InitializeComponent();

@@ -1,5 +1,5 @@
---cache=/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-cache
---sim=/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/MeteoApp.iOS.app
+"--cache=/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-cache"
+"--sim=/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/MeteoApp.iOS.app"
 --executable=MeteoApp.iOS
 --debug
 --nolink
@@ -9,7 +9,7 @@
 --aot-options=-O=-float32
 --http-message-handler=NSUrlSessionHandler
 --abi=x86_64
---symbollist=/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-symbols.list
+"--symbollist=/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/mtouch-symbols.list"
 --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
@@ -206,5 +206,5 @@
 -r=/Users/patrick/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/patrick/.nuget/packages/xamarin.forms/3.6.0.293080/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/bin/iPhoneSimulator/Debug/MeteoApp.iOS.exe
+"--root-assembly=/Users/patrick/Documents/cartella senza titolo/AppMeteoXam/MeteoApp.iOS/bin/iPhoneSimulator/Debug/MeteoApp.iOS.exe"
 
