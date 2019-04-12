@@ -13,8 +13,8 @@
 namespace MeteoApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/marco/Desktop/mobile/ProgettoXam/AppMeteoXam/MeteoApp/Views/MeteoListPage." +
-        "xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/eliaperrone/Documents/SUPSI/2018_2019/6_Semestre/Applicazioni_Mobile/Proge" +
+        "ttoXamarine/AppMeteoXam/MeteoApp/Views/MeteoListPage.xaml")]
     public partial class MeteoListPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

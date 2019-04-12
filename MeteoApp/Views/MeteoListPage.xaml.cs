@@ -28,13 +28,15 @@ namespace MeteoApp
 
         void OnItemAdded(object sender, EventArgs e)
         {
+            // TODO modificare per compilare anche in ANDROID
+
             //DisplayAlert("Messaggio", "Testo", "OK");
             string input="";
             UIAlertView alert = new UIAlertView();
             alert.Title = "New City";
             alert.AddButton("Add");
             alert.AddButton("Cancel");
-            alert.Message = "Please Enter a city";
+            alert.Message = "Please Enter a City";
             alert.AlertViewStyle = UIAlertViewStyle.PlainTextInput;
             alert.Clicked += (object s, UIButtonEventArgs ev) =>
             {
@@ -50,7 +52,10 @@ namespace MeteoApp
                     Name = input
 
                 };
-                MeteoListViewModel.Entries.Add(appoggio);
+                if (appoggio.Name != "")
+                {
+                    MeteoListViewModel.Entries.Add(appoggio);
+                }
             };
             alert.Show();
 

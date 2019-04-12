@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+
+using Plugin.Geolocator;
 
 namespace MeteoApp
 {
@@ -21,31 +24,34 @@ namespace MeteoApp
         {
             Entries = new ObservableCollection<Entry>();
 
-            for (var i = 0; i < 10; i++)
+            //GetLocation(); NON VA PERCHÈ ???
+
+            Entries.Add(new Entry
             {
-                var e = new Entry
-                {
-                    ID = i,
-                    Name = "Entry " + i,
-                    MaxTemperature = GetRandomNumber(230,550),
-                    ActualTemperature = GetRandomNumber(0,100),
-                    MinTemperature = GetRandomNumber(-10,40)
-                };
-
-                Entries.Add(e);
-            }
+                ID = 1,
+                Name = "Prova"
+            });
         }
-        private static readonly Random getrandom = new Random();
 
-        public static int GetRandomNumber(int min, int max)
+
+        async void GetLocation()
         {
-            lock (getrandom) // synchronize
+            var locator = CrossGeolocator.Current;
+
+            // One position
+            var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
+
+            Entries = new ObservableCollection<Entry>();
+
+            Entries.Add(new Entry
             {
-                return getrandom.Next(min, max);
-            }
+                ID = 0,
+                Name = "Current Location",
+                Lat = position.Latitude,
+                Lon = position.Longitude
+            });
+
         }
-
-
 
     }
 
