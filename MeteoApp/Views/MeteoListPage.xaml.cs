@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using UIKit;
 using Xamarin.Forms;
+using Acr.UserDialogs;
 
 namespace MeteoApp
 {
@@ -15,6 +15,7 @@ namespace MeteoApp
         {
             InitializeComponent();
             BindingContext = MeteoListViewModel;
+
         }
 
 
@@ -26,36 +27,56 @@ namespace MeteoApp
         }
 
 
-
-        void OnItemAdded(object sender, EventArgs e)
+        async void OnItemAdded(object sender, EventArgs e)
         {
             //DisplayAlert("Messaggio", "Testo", "OK");
-            string input="";
-            UIAlertView alert = new UIAlertView();
-            alert.Title = "New City";
-            alert.AddButton("Add");
-            alert.AddButton("Cancel");
-            alert.Message = "Please Enter a city";
-            alert.AlertViewStyle = UIAlertViewStyle.PlainTextInput;
-            alert.Clicked += (object s, UIButtonEventArgs ev) =>
+
+            var cityToAdd = await UserDialogs.Instance.PromptAsync(new PromptConfig
             {
-                if (ev.ButtonIndex == 0)
+                InputType = InputType.Name,
+                OkText = "Add",
+
+                Title = "New city",
+            });
+            // esempio: creo una nuova Entry partendo dal testo e la aggiungo al ViewModel
+            if (cityToAdd.Ok && !string.IsNullOrWhiteSpace(cityToAdd.Text))
+            {
+                var newEntry = new Entry
                 {
-                     input = alert.GetTextField(0).Text;
+                    ID = cityToAdd.GetHashCode(),
+                    Name = cityToAdd.Text
+                };
 
-                    var appoggio = new Entry
-                    {
-                        ID = 2,
-                        Name = input
+                MeteoListViewModel.Entries.Add(newEntry);
+            }
 
-                    };
-                    OnActionSheetSimpleClicked(sender, e);
-                    MeteoListViewModel.Entries.Add(appoggio);
-                }
-                //faccio la richiesta ad openCage
-               
-            };
-            alert.Show();
+
+            //string input="";
+            //UIAlertView alert = new UIAlertView();
+            //alert.Title = "New City";
+            //alert.AddButton("Add");
+            //alert.AddButton("Cancel");
+            //alert.Message = "Please Enter a city";
+            //alert.AlertViewStyle = UIAlertViewStyle.PlainTextInput;
+            //alert.Clicked += (object s, UIButtonEventArgs ev) =>
+            //{
+            //    if (ev.ButtonIndex == 0)
+            //    {
+            //         input = alert.GetTextField(0).Text;
+
+            //        var appoggio = new Entry
+            //        {
+            //            ID = 2,
+            //            Name = input
+
+            //        };
+            //        OnActionSheetSimpleClicked(sender, e);
+            //        MeteoListViewModel.Entries.Add(appoggio);
+            //    }
+            //    //faccio la richiesta ad openCage
+
+            //};
+            //alert.Show();
 
         }
 

@@ -1,0 +1,4 @@
+.vs/
+.DS_Store
+./MeteoApp.Android/obj/Debug/*
+./MeteoApp.iOS/bin/iPhoneSimulator/Debug/*

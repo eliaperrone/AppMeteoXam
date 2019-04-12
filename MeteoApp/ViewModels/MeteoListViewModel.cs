@@ -19,21 +19,22 @@ namespace MeteoApp
 
         public MeteoListViewModel()
         {
+
             Entries = new ObservableCollection<Entry>();
 
-            for (var i = 0; i < 10; i++)
-            {
-                var e = new Entry
-                {
-                    ID = i,
-                    Name = "Entry " + i,
-                    MaxTemperature = GetRandomNumber(230,550),
-                    ActualTemperature = GetRandomNumber(0,100),
-                    MinTemperature = GetRandomNumber(-10,40)
-                };
+            //for (var i = 0; i < 10; i++)
+            //{
+            //    var e = new Entry
+            //    {
+            //        ID = i,
+            //        Name = "Entry " + i,
+            //        MaxTemperature = GetRandomNumber(230,550),
+            //        ActualTemperature = GetRandomNumber(0,100),
+            //        MinTemperature = GetRandomNumber(-10,40)
+            //    };
 
-                Entries.Add(e);
-            }
+            //    Entries.Add(e);
+            //}
         }
         private static readonly Random getrandom = new Random();
 
