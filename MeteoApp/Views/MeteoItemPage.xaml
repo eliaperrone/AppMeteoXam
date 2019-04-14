@@ -4,22 +4,45 @@
             
             <StackLayout>
                 
-            <Label Text="{Binding Entry.Name}"
-                   HorizontalOptions="CenterAndExpand"
-                   FontSize="28"
-                   Margin="50"/>
-           
-            <!-- immagine non va -->
-            <Image Source="a01d.png"/>
             
-            <Label Text="{Binding Entry.ActualTemperature, StringFormat='{0} C°'}"
+            <Label HorizontalOptions="Center" Margin="50" FontSize="28">
+                <Label.FormattedText >
+                  <FormattedString > 
+                       
+                    <Span Text="{Binding Entry.Name}"  />
+                    <Span Text=", " />
+                    <Span Text="{Binding Entry.State}" />
+                        
+                  </FormattedString>
+                </Label.FormattedText>
+              </Label>
+            
+         
+            
+      
+            
+
+           
+            <!-- immagine va -->
+    
+            <Image Source="{Binding Entry.icon}"
+     
+       HorizontalOptions="FillAndExpand"
+       VerticalOptions="FillAndExpand" />
+         
+            <Label Text="{Binding Entry.Description}"
                    HorizontalOptions="Center"
                    Margin="10"/>
             
-            <Label Text="{Binding Entry.MaxTemperature, StringFormat='{0} C°'}"
+            
+            <Label Text="{Binding Entry.ActualTemperature, StringFormat='{0} K°'}"
+                   HorizontalOptions="Center"
+                   Margin="10"/>
+            
+            <Label Text="{Binding Entry.MaxTemperature, StringFormat='{0} K°'}"
                    HorizontalOptions="Center"/>
             
-            <Label Text="{Binding Entry.MinTemperature, StringFormat='{0} C°'}"
+            <Label Text="{Binding Entry.MinTemperature, StringFormat='{0} K°'}"
                    HorizontalOptions="Center"
                    Margin="10"/>
                 

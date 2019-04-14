@@ -14,7 +14,15 @@
             <DataTemplate>
                 <ViewCell>
                     <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                                    <Label >
+                                        <Label.FormattedText >
+                                          <FormattedString >     
+                                            <Span Text="{Binding Name}"  />
+                                            <Span Text=", " />
+                                            <Span Text="{Binding State}" /> 
+                                          </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
                         <Image Source="check.png" HorizontalOptions="End" IsVisible="{Binding Done}" />
                     </StackLayout>
                 </ViewCell>
