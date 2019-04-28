@@ -32,9 +32,11 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>MeteoApp</string>
-	<key>Location When In Use Usage Description</key>
-	<string>This app needs the location</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>Custom Property</key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 </dict>
 </plist>

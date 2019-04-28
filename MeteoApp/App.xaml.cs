@@ -7,6 +7,29 @@ namespace MeteoApp
 {
     public partial class App : Application
     {
+        static TestDatabase database;
+
+        public static TestDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new TestDatabase();
+                
+                }
+                return database;
+            }
+
+           
+
+        }
+
+        public static void addItem(Entry e) {
+            database.SaveItemAsync(e);
+        }
+
+
         public App()
         {
             InitializeComponent();

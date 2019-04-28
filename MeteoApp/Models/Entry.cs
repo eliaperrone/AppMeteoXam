@@ -1,9 +1,10 @@
 ﻿using System;
-
+using SQLite;
 namespace MeteoApp
 {
     public class Entry
     {
+        [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string Name { get; set; }
         public string State { get; set; }  //aggiunto dopo

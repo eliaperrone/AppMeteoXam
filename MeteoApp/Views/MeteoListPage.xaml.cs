@@ -21,18 +21,9 @@ namespace MeteoApp
         }
 
 
-        ICollection<Entry> getAllCity() {
-            ICollection<Entry> appoggio = new ObservableCollection<Entry>();
-            return  null;
-        }
-
-
-
          void  OnItemAdded(object sender, EventArgs e)
         {
             // TODO modificare per compilare anche in ANDROID
-
-            //DisplayAlert("Messaggio", "Testo", "OK");
             string input="";
             UIAlertView alert = new UIAlertView();
             alert.Title = "New City";
@@ -46,16 +37,13 @@ namespace MeteoApp
                 {
                      input = alert.GetTextField(0).Text;
                     Task < Entry > task = GetWeatherAsync(input);
-
-
                     var appogio = await task;
-                   MeteoListViewModel.Entries.Add(appogio);
+
+                    MeteoListViewModel.Entries.Add(appogio);
+                    App.addItem(appogio);
                 }
-                //faccio la richiesta ad openCage
-               
             };
             alert.Show();
-
         }
 
         public async  Task<Entry>  GetWeatherAsync(string Nome)
@@ -81,6 +69,7 @@ namespace MeteoApp
 
 
 
+
         void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)
@@ -94,22 +83,5 @@ namespace MeteoApp
 
 
 
-        async void OnActionSheetSimpleClicked(object sender, EventArgs e)
-        {
-            string action = await DisplayActionSheet("Select City", "Cancel", null, "Choose1", "Choose2", "Choose3");
-            Debug.WriteLine("Action: " + action);
-        }
-
-        //funzione per visualizzare tutte le città del mondo che hanno quel nome 
-        ICollection<Support> GetRequestForNameToLatLon(string name) {
-            ICollection<Support> appoggio = new Collection<Support>();
-            appoggio.Add(new Support { ID = 0, Name="Manno, JP", Lat = 12, Lon = 13 });
-            appoggio.Add(new Support { ID = 1, Name ="Manno, IT", Lat = 2, Lon = 55 });
-            appoggio.Add(new Support { ID = 2, Name ="Manno, DE", Lat = 24, Lon = 34 });
-            appoggio.Add(new Support { ID = 3, Name ="Manno, USD", Lat = 124, Lon = 138 });
-            appoggio.Add(new Support { ID = 4, Name ="Manno, SW", Lat = 23, Lon = 3 });
-
-            return appoggio;
-        }
     }
 }
