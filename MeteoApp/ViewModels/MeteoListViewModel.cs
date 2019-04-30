@@ -29,6 +29,7 @@ namespace MeteoApp
         {
             Entries = new ObservableCollection<Entry>();
             System.Console.WriteLine("coNTA : " + App.Database.GetItemsAsync().Result.Count);
+            Entries.Add(new Entry { ID = 0, Name = "Localizzazione in corso" });
             foreach (Entry a in App.Database.GetItemsAsync().Result) {
                 System.Console.WriteLine("Proc " + a.Name);
                 Entries.Add(a);
@@ -51,9 +52,9 @@ namespace MeteoApp
 
             Console.WriteLine("ciaooo" + appogio.Name);
 
-            Entries.Insert(0, appogio);
-            
 
+            Entries.RemoveAt(0);
+            Entries.Insert(0, appogio);
         }
 
 
