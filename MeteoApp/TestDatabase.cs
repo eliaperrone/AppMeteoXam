@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
@@ -49,8 +47,6 @@ namespace MeteoApp
         public Task<int> SaveItemAsync(Entry item)
         {
             System.Console.WriteLine("Inserito Elemento nel db " + item.Name);
-
-
             return database.InsertAsync(item);
         }
 

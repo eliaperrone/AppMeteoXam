@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
 
-using UIKit;
 using Xamarin.Forms;
 using Newtonsoft.Json.Linq;
 namespace MeteoApp
@@ -45,13 +44,7 @@ namespace MeteoApp
         {
             var locator = CrossGeolocator.Current;
 
-            // One position
             var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
-
-            //Entries = new ObservableCollection<Entry>();
-
-
-   
 
             Task<Entry> task = GetWeatherAsyncLatLong(position.Latitude, position.Longitude);
             var appogio = await task;
@@ -67,7 +60,7 @@ namespace MeteoApp
         public async Task<Entry> GetWeatherAsyncLatLong(double lat, double lon)
         {
             var httpClient = new HttpClient();
-            Task<string> contentsTask = httpClient.GetStringAsync("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=c200173e4aeed3198803206f96382afe");
+            Task<string> contentsTask = httpClient.GetStringAsync("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric&appid=c200173e4aeed3198803206f96382afe");
             Console.WriteLine(contentsTask);
             var content = await contentsTask; 
             var Appoggio = new Entry

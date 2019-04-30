@@ -35,14 +35,14 @@
                    Margin="10"/>
             
             
-            <Label Text="{Binding Entry.ActualTemperature, StringFormat='{0} K°'}"
+            <Label Text="{Binding Entry.ActualTemperature, StringFormat='{0} C°'}"
                    HorizontalOptions="Center"
                    Margin="10"/>
             
-            <Label Text="{Binding Entry.MaxTemperature, StringFormat='{0} K°'}"
+            <Label Text="{Binding Entry.MaxTemperature, StringFormat='{0} C°'}"
                    HorizontalOptions="Center"/>
             
-            <Label Text="{Binding Entry.MinTemperature, StringFormat='{0} K°'}"
+            <Label Text="{Binding Entry.MinTemperature, StringFormat='{0} C°'}"
                    HorizontalOptions="Center"
                    Margin="10"/>
                 
