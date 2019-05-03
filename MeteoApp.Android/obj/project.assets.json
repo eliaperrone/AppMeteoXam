@@ -1759,20 +1759,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/patrick/.nuget/packages/": {}
+    "/Users/eliaperrone/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.Android/MeteoApp.Android.csproj",
+      "projectUniqueName": "/Users/eliaperrone/Documents/SUPSI/2018_2019/6_Semestre/Applicazioni_Mobile/ProgettoXamarine/AppMeteoXam/MeteoApp.Android/MeteoApp.Android.csproj",
       "projectName": "MeteoApp.Android",
-      "projectPath": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.Android/MeteoApp.Android.csproj",
-      "packagesPath": "/Users/patrick/.nuget/packages/",
-      "outputPath": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.Android/obj/",
+      "projectPath": "/Users/eliaperrone/Documents/SUPSI/2018_2019/6_Semestre/Applicazioni_Mobile/ProgettoXamarine/AppMeteoXam/MeteoApp.Android/MeteoApp.Android.csproj",
+      "packagesPath": "/Users/eliaperrone/.nuget/packages/",
+      "outputPath": "/Users/eliaperrone/Documents/SUPSI/2018_2019/6_Semestre/Applicazioni_Mobile/ProgettoXamarine/AppMeteoXam/MeteoApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/patrick/.config/NuGet/NuGet.Config"
+        "/Users/eliaperrone/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"

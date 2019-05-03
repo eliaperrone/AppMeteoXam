@@ -1,22 +1,15 @@
 ﻿<Properties StartupConfiguration="{DF481D7D-FAA4-4FF1-A575-344ED5C8D342}|Default">
-  <MonoDevelop.Ide.ItemProperties.MeteoApp.Android PreferredExecutionTarget="Android.my_device" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MeteoApp.Android/Properties/AndroidManifest.xml">
+  <MonoDevelop.Ide.ItemProperties.MeteoApp.Android PreferredExecutionTarget="Android.Nexus_5X_API_25" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MeteoApp.Android/MainApplication.cs">
     <Files>
-      <File FileName="MeteoApp.Android/MainActivity.cs" Line="22" Column="36" />
-      <File FileName="MeteoApp.Android/MainApplication.cs" Line="5" Column="39" />
-      <File FileName="MeteoApp.Android/Properties/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="MeteoApp.Android/MainApplication.cs" Line="22" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MeteoApp" expanded="True">
-            <Node name="MeteoApp" expanded="True">
-              <Node name="ViewModels" expanded="True" />
-            </Node>
             <Node name="MeteoApp.Android" expanded="True">
-              <Node name="Properties" expanded="True">
-                <Node name="AndroidManifest.xml" selected="True" />
-              </Node>
+              <Node name="MainApplication.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -24,7 +17,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MeteoApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BC8EB5B0-BB23-4C9C-97A2-0E86B9DFA32B" />
+  <MonoDevelop.Ide.ItemProperties.MeteoApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.13ABFA94-E546-4BA4-9630-CCADF9BCF209" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
