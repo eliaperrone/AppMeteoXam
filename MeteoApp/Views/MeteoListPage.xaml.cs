@@ -11,6 +11,7 @@ namespace MeteoApp
     {
         MeteoListViewModel MeteoListViewModel = new MeteoListViewModel();
 
+
         public MeteoListPage()
         {
             InitializeComponent();
@@ -36,6 +37,7 @@ namespace MeteoApp
                 };
 
                 Task<Entry> task = GetWeatherAsync(cityToAdd.Text);
+
                 var appoggio = await task;
 
                 MeteoListViewModel.Entries.Add(appoggio);
@@ -48,8 +50,8 @@ namespace MeteoApp
         {
             var httpClient = new HttpClient();
            Task<string> contentsTask = httpClient.GetStringAsync("https://api.openweathermap.org/data/2.5/weather?q=" + Nome + "&units=metric&appid=c200173e4aeed3198803206f96382afe");
-      
-            var content = await contentsTask; 
+
+            var content = await contentsTask;
             var Appoggio = new Entry
             {
                 Lat = (double)JObject.Parse(content)["coord"]["lat"],
@@ -62,10 +64,9 @@ namespace MeteoApp
                 Name =(string)JObject.Parse(content)["name"],
                 State = (string)JObject.Parse(content)["sys"]["country"]
             };
-            return Appoggio;
+
+         return Appoggio;
         }
-
-
 
 
         void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -78,8 +79,5 @@ namespace MeteoApp
                 });
             }
         }
-
-
-
     }
 }

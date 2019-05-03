@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Plugin.Geolocator;
 using System.Net.Http;
 using Newtonsoft.Json.Linq;
+
 namespace MeteoApp
 {
     public class MeteoListViewModel : BaseViewModel
@@ -23,16 +24,12 @@ namespace MeteoApp
          public   MeteoListViewModel()
         {
             Entries = new ObservableCollection<Entry>();
-            System.Console.WriteLine("coNTA : " + App.Database.GetItemsAsync().Result.Count);
             Entries.Add(new Entry { ID = 0, Name = "Localizzazione in corso" });
             foreach (Entry a in App.Database.GetItemsAsync().Result) {
-                System.Console.WriteLine("Proc " + a.Name);
                 Entries.Add(a);
             }
 
-
-            GetLocation(); // VA, PERCHÈ ???
-
+            GetLocation(); 
         }
 
 
@@ -44,9 +41,6 @@ namespace MeteoApp
 
             Task<Entry> task = GetWeatherAsyncLatLong(position.Latitude, position.Longitude);
             var appogio = await task;
-
-            Console.WriteLine("ciaooo" + appogio.Name);
-
 
             Entries.RemoveAt(0);
             Entries.Insert(0, appogio);
