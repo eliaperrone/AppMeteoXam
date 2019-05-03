@@ -16,24 +16,14 @@
                   </FormattedString>
                 </Label.FormattedText>
               </Label>
-            
-         
-            
-      
-            
-
-           
-            <!-- immagine va -->
     
             <Image Source="{Binding Entry.icon}"
-     
-       HorizontalOptions="FillAndExpand"
-       VerticalOptions="FillAndExpand" />
+                   WidthRequest="200"
+                   HeightRequest="200"/>
          
             <Label Text="{Binding Entry.Description}"
                    HorizontalOptions="Center"
                    Margin="10"/>
-            
             
             <Label Text="{Binding Entry.ActualTemperature, StringFormat='{0} C°'}"
                    HorizontalOptions="Center"

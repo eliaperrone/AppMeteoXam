@@ -2,12 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Plugin.Geolocator;
-using System.Collections.Generic;
-
-using System.Diagnostics;
 using System.Net.Http;
-
-using Xamarin.Forms;
 using Newtonsoft.Json.Linq;
 namespace MeteoApp
 {

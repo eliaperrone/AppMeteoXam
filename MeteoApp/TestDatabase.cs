@@ -12,7 +12,7 @@ namespace MeteoApp
 
         public TestDatabase()
         {
-            var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TestSQLite.db4");
+            var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TestSQLite.db5");
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<Entry>().Wait();
         }
