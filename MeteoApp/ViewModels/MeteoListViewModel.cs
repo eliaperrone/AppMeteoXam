@@ -24,8 +24,8 @@ namespace MeteoApp
 
             Entries = new ObservableCollection<Entry>();
 
+            //Carico contenuto database
             dbEntry = App.Database.GetItemsAsync().Result;
-
             foreach (var entry in dbEntry)
             {
                 Entries.Add(entry);
