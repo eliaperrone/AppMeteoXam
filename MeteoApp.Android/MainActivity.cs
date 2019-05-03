@@ -2,6 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 using Acr.UserDialogs;
+using Plugin.FirebasePushNotification;
 
 namespace MeteoApp.Droid
 {
@@ -10,15 +11,19 @@ namespace MeteoApp.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
-            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
+           
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             UserDialogs.Init(this);
+
             LoadApplication(new App());
+
+            FirebasePushNotificationManager.ProcessIntent(this, Intent);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)

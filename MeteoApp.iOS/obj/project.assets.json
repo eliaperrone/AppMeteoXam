@@ -1299,20 +1299,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/eliaperrone/.nuget/packages/": {}
+    "/Users/patrick/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/eliaperrone/Documents/SUPSI/2018_2019/6_Semestre/Applicazioni_Mobile/ProgettoXamarine/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
+      "projectUniqueName": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
       "projectName": "MeteoApp.iOS",
-      "projectPath": "/Users/eliaperrone/Documents/SUPSI/2018_2019/6_Semestre/Applicazioni_Mobile/ProgettoXamarine/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
-      "packagesPath": "/Users/eliaperrone/.nuget/packages/",
-      "outputPath": "/Users/eliaperrone/Documents/SUPSI/2018_2019/6_Semestre/Applicazioni_Mobile/ProgettoXamarine/AppMeteoXam/MeteoApp.iOS/obj/",
+      "projectPath": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/MeteoApp.iOS.csproj",
+      "packagesPath": "/Users/patrick/.nuget/packages/",
+      "outputPath": "/Users/patrick/Documents/ProgettoXamarin/AppMeteoXam/MeteoApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/eliaperrone/.config/NuGet/NuGet.Config"
+        "/Users/patrick/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
